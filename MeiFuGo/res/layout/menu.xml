@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/people_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/menu_height"
+    android:background="@color/menu"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/all_index"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/menu_text_color"
+                android:id="@+id/index_font"
+                android:text="@string/brightness_1"
+                />
+
+        <TextView
+                android:id="@+id/index_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/menu_text_color"
+            android:textSize="@dimen/menu_text"
+            android:text="首页"
+            />
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/all_community"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/menu_text_color"
+                android:text="@string/assistant"
+                android:id="@+id/community_font"
+                />
+
+        <TextView
+                android:id="@+id/community_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text"
+                android:text="社区"
+                />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/all_course"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/menu_height"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:gravity="center" >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/menu_text_color"
+                android:text="@string/import_contacts"
+                android:id="@+id/course_font"
+                />
+
+        <TextView
+                android:id="@+id/course_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text"
+                android:text="课程"
+
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/all_me"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/menu_height"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <com.zhonghua.dileber.tools.SFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_text_size"
+                android:textColor="@color/menu_text_color"
+                android:text="@string/face"
+                android:id="@+id/me_font"
+                />
+
+        <TextView
+                android:id="@+id/me_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/menu_text_color"
+                android:textSize="@dimen/menu_text"
+                android:text="我的"
+
+                />
+
+    </LinearLayout>
+
+
+</LinearLayout>

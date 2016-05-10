@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="menu">#d9534f</color>
+<color name="title">#d9534f</color>
+<color name="menu_text_color">#ffffff</color>
+<color name="title_text_color">#ffffff</color>
+<color name="home_text_color">#000000</color>
+<color name="title_btn_color">#000000</color>
+<color name="menu_text_color_two">#ffccd6</color>
+
+<color name="menu_text_color_three">#ff0000</color>
+
+
+
+<color name="search_color">#c4c4c4</color>
+<color name="search_text">#000000</color>
+    <color name="list_home_back">#F4F4F4</color>
+
+    <color name="gray">#F4F4F1</color>
+    <color name="gray_deep">#c4c4c4</color>
+    <color name="btn_gf">#fffd4176</color>
+
+    <color name="touming">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="theme">#ffccd6</color>
+    <color name="black">#000000</color>
+</resources>

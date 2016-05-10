@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:padding="8dp"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2">
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/list_find_tm"
+                    android:visibility="gone"
+                    ></View>
+
+
+    <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/find_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon"
+            />
+
+        <TextView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:text="标题"
+                android:gravity="center"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:id="@+id/find_title"
+                />
+
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/black_grey_back"
+            android:id="@+id/list_find_type"
+            android:text="分类"
+            android:layout_marginRight="28dp"
+            android:layout_below="@+id/linearLayout2" android:layout_alignRight="@+id/linearLayout2"
+            android:layout_alignEnd="@+id/linearLayout2"
+            android:layout_marginTop="-70dp"
+            android:layout_marginEnd="28dp"/>
+
+
+</RelativeLayout>

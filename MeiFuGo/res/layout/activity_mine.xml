@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/theme"
+        >
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            layout="@layout/title" android:id="@+id/include"/>
+
+    <include
+            android:id="@+id/menu_bar"
+            layout="@layout/menu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_below="@+id/include"
+            android:layout_centerHorizontal="true" android:layout_above="@+id/menu_bar">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+            <com.android.volley.toolbox.NetworkImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/icon"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/user_image"
+                    />
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尚未登陆"
+                        android:textColor="@color/black"
+
+                        android:id="@+id/textView3" android:layout_gravity="center_horizontal"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已登陆"
+                        android:padding="6dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/black_stroke_wite_solid"
+                        android:layout_margin="10dp"
+                        android:id="@+id/textView4" android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/line"
+              android:background="@color/gray_deep"
+                />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我的订单"
+                android:textColor="@color/black"
+                android:padding="7dp"
+                android:id="@+id/textView5" android:layout_gravity="center_horizontal"/>
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/line"
+                android:background="@color/gray_deep"
+                />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我的信息"
+                android:gravity="center"
+                android:padding="7dp"
+                android:textColor="@color/black"
+                android:id="@+id/textView6" android:layout_gravity="center_horizontal"/>
+
+        <View android:layout_width="match_parent" android:layout_height="@dimen/line"
+              android:background="@color/gray_deep"
+                />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="我的收货地址"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/textView7" android:layout_gravity="center_horizontal"/>
+        <View android:layout_width="match_parent" android:layout_height="@dimen/line"
+              android:background="@color/gray_deep"
+                />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="我的关注"
+                android:textColor="@color/black"
+                android:id="@+id/textView8" android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/home_carousel"
+                android:id="@+id/linearLayout">
+
+
+            <LinearLayout
+                    android:id="@+id/home_myshop"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:gravity="center" >
+
+                <com.zhonghua.dileber.tools.SFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/home_text_size"
+                        android:textColor="@color/home_text_color"
+                        android:id="@+id/home_myshop_font"
+                        android:text="@string/brightness_1"
+                        />
+
+                <TextView
+                        android:id="@+id/home_myshop_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/home_text"
+                        android:text="全部"
+                        />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/home_mycourse"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:gravity="center" >
+
+                <com.zhonghua.dileber.tools.SFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/home_text_size"
+                        android:textColor="@color/home_text_color"
+                        android:text="@string/storage"
+                        android:id="@+id/home_mycourse_font"
+                        />
+
+                <TextView
+                        android:id="@+id/home_mycourse_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/home_text"
+                        android:text="代购"
+                        />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/mine_course"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:gravity="center" >
+
+                <com.zhonghua.dileber.tools.SFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/home_text_size"
+                        android:textColor="@color/home_text_color"
+                        android:text="@string/import_contacts"
+                        android:id="@+id/mine_course_font"
+                        />
+
+                <TextView
+                        android:id="@+id/mine_course_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/home_text_color"
+                        android:textSize="@dimen/home_text"
+                        android:text="美肤课"
+                        />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView" android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+

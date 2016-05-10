@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:background="@color/theme"
+              android:layout_height="fill_parent"
+        >
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="作者名称"
+                android:id="@+id/name"
+                />
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2015-04-10"
+                android:id="@+id/time"
+                />
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="80dp">
+            <com.android.volley.toolbox.NetworkImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/icon"
+                    android:id="@+id/imagee"
+                    />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="与她聊天"
+            android:padding="6dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/black_stroke_wite_solid"
+            android:layout_margin="10dp"
+            android:id="@+id/textView4" android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="无文章"
+            android:textColor="@color/black"
+            android:id="@+id/article_text"
+            android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>
+

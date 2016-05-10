@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/theme"
+        >
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            layout="@layout/title" android:id="@+id/include"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/search_color"
+            android:id="@+id/home_search"
+            android:layout_below="@+id/include" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/write_round_rect"
+                android:hint="搜索"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/search_text"
+                android:imeOptions="actionSearch"
+                android:textColorHint="@color/gray_deep"
+                android:singleLine="true"
+                android:id="@+id/home_search_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_search"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/home_carousel"
+            android:layout_alignParentStart="true">
+    </LinearLayout>
+
+
+    <include
+            android:id="@+id/menu_bar"
+            layout="@layout/menu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/home_carousel"
+            android:background="@color/white" android:id="@+id/linearLayout">
+
+
+        <LinearLayout
+                android:id="@+id/home_myshop"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:gravity="center" >
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/home_text_size"
+                    android:textColor="@color/home_text_color"
+                    android:id="@+id/home_myshop_font"
+                    android:text="@string/shopping_cart"
+                    />
+
+            <TextView
+                    android:id="@+id/home_myshop_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/home_text_color"
+                    android:textSize="@dimen/home_text"
+                    android:text="我的购"
+                    />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/home_mycourse"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:gravity="center" >
+
+            <com.zhonghua.dileber.tools.SFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/home_text_size"
+                    android:textColor="@color/home_text_color"
+                    android:text="@string/storage"
+                    android:id="@+id/home_mycourse_font"
+                    />
+
+            <TextView
+                    android:id="@+id/home_mycourse_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/home_text_color"
+                    android:textSize="@dimen/home_text"
+                    android:text="我的课"
+                    />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="热门推荐"
+            android:textColor="@color/black"
+            android:id="@+id/home_hot" android:layout_below="@+id/linearLayout" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_list"
+                android:layout_below="@+id/home_hot"
+                android:layout_centerHorizontal="true" android:layout_above="@+id/menu_bar"/>
+
+</RelativeLayout>
+

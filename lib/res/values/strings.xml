@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dileber</string>
+
+    <string name="dialog_default_title">消息</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="LOADING">加载中...</string>
+    <string name="dialog_error">错误</string>
+    <string name="dialog_success">成功</string>
+    <string name="dialog_warning">警告</string>
+
+</resources>

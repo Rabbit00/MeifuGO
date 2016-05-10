@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MeiFuGo</string>
+
+  <string name="fast_forward">&#xe01f;</string>
+  <string name="fast_rewind">&#xe020;</string>
+  <string name="import_contacts">&#xe0e0;</string>
+  <string name="storage">&#xe1db;</string>
+  <string name="monetization_on">&#xe263;</string>
+  <string name="keyboard_arrow_left">&#xe314;</string>
+  <string name="keyboard_arrow_right">&#xe315;</string>
+  <string name="assistant">&#xe39f;</string>
+  <string name="brightness_1">&#xe3a6;</string>
+  <string name="school">&#xe80c;</string>
+  <string name="face">&#xe87c;</string>
+  <string name="shopping_cart">&#xe8cc;</string>
+
+</resources>
